@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4606052222473807" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover a wide range of free online tools for images, PDFs, and more. Optimize, convert, and compress files effortlessly.">
+    <meta name="keywords" content="image tools, PDF tools, online tools, compress images, convert PDF, SEO tools">
+    <meta name="author" content="Md Ismail Majumdar">
+    <title>Online Tools - Image & PDF Tools</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 159, 67, 0.2), transparent 70%);
+            animation: float 6s infinite linear;
+            z-index: -1;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(50%, 50%);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            color: #ff9f43;
+            text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+            color: #f0f0f0;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Tool Cards */
+        .tool-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            width: calc(33.333% - 40px);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tool-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 159, 67, 0.3), transparent 70%);
+            animation: float 8s infinite linear;
+            z-index: -1;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .tool-card i {
+            font-size: 3rem;
+            color: #ff9f43;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .tool-card:hover i {
+            transform: rotate(15deg) scale(1.1);
+        }
+
+        .tool-card h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        .tool-card p {
+            margin: 10px 0 0;
+            font-size: 1rem;
+            color: #f0f0f0;
+        }
+
+        .tool-card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #ff9f43;
+            color: #fff;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .tool-card a:hover {
+            background: #ff7f00;
+            transform: translateY(-3px);
+        }
+
+        /* Auto Picture Edit Section */
+        #auto-edit-section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            width: 100%;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #auto-edit-section h2 {
+            margin: 0 0 20px;
+            font-size: 2rem;
+            color: #ff9f43;
+        }
+
+        #auto-edit-section input[type="file"] {
+            display: none;
+        }
+
+        #auto-edit-section label {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff9f43;
+            color: #fff;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        #auto-edit-section label:hover {
+            background: #ff7f00;
+            transform: translateY(-3px);
+        }
+
+        #auto-edit-section canvas {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            margin: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        footer p {
+            margin: 0;
+            color: #f0f0f0;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            overflow: auto;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .tool-card {
+                width: calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tool-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Tools</h1>
+        <p>Your one-stop destination for free image and PDF tools. Optimize, convert, and compress files effortlessly.</p>
+    </header>
+
+    <main>
+        <!-- Ad Banner -->
+        <div id="ad-banner" style="width: 100%; text-align: center; margin-bottom: 20px;">
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-4606052222473807"
+                data-ad-slot="2182986805"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- Image Tools -->
+        <div class="tool-card">
+            <i class="fas fa-image"></i>
+            <h2>Image Compressor</h2>
+            <p>Compress and optimize images for faster web performance.</p>
+            <input type="file" id="image-compressor-input" accept="image/*">
+            <div id="compression-quality-container" style="display: none;">
+                <label for="compression-quality">Quality: <span id="quality-value">70</span>%</label>
+                <input type="range" id="compression-quality" min="1" max="100" value="70">
+            </div>
+            <button id="compress-image-btn" style="margin-top: 10px;">Compress</button>
+        </div>
+
+        <div class="tool-card">
+            <i class="fas fa-file-image"></i>
+            <h2>Image Converter</h2>
+            <p>Convert images to different formats like JPG, PNG, and more.</p>
+            <input type="file" id="image-converter-input" accept="image/*">
+            <select id="image-converter-format">
+                <option value="jpg">JPG</option>
+                <option value="png">PNG</option>
+                <option value="webp">WEBP</option>
+            </select>
+            <button id="convert-image-btn" style="margin-top: 10px;">Convert</button>
+        </div>
+
+        <div class="tool-card">
+            <i class="fas fa-crop"></i>
+            <h2>Image Resizer</h2>
+            <p>Resize images to your desired dimensions.</p>
+            <input type="file" id="image-resizer-input" accept="image/*">
+            <div id="resize-options" style="display: none;">
+                <label for="image-resizer-width">Width:</label>
+                <input type="number" id="image-resizer-width" placeholder="Width">
+                <label for="image-resizer-height">Height:</label>
+                <input type="number" id="image-resizer-height" placeholder="Height">
+                <label><input type="checkbox" id="lock-aspect-ratio"> Lock Aspect Ratio</label>
+            </div>
+            <button id="resize-image-btn" style="margin-top: 10px;">Resize</button>
+        </div>
+
+        <!-- PDF Tools -->
+        <div class="tool-card">
+            <i class="fas fa-file-pdf"></i>
+            <h2>PDF Converter</h2>
+            <p>Convert PDF files to various formats, including Word, Excel, and more.</p>
+            <input type="file" id="pdf-converter-input" accept=".pdf">
+            <select id="pdf-converter-format">
+                <option value="docx">DOCX</option>
+                <option value="xlsx">XLSX</option>
+            </select>
+            <button id="convert-pdf-btn" style="margin-top: 10px;">Convert</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Online Tools. All rights reserved.</p>
+    </footer>
+</body>
+</html>
